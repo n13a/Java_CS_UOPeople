@@ -31,7 +31,6 @@
 
 6.     Implement an exit option to allow the user to exit the program. */
 
-
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
@@ -82,7 +81,8 @@ public class Library {
             }
         }
 
-        // If the book doesn't exist, get author and quantity details and add it to the library
+        // If the book doesn't exist, get author and quantity details and add it to the
+        // library
         System.out.print("Author: ");
         String author = scanner.nextLine();
 
@@ -134,9 +134,9 @@ public class Library {
 
     // Method to display all books in the library
     public void displayBooks() {
-        if(books.size() == 0) {
-          System.out.println("There are no books, yet.");
-          return;
+        if (books.size() == 0) {
+            System.out.println("There are no books, yet.");
+            return;
         }
         System.out.println("Library Books:\n");
         for (Book book : books) {
@@ -150,7 +150,8 @@ public class Library {
         Scanner scanner = new Scanner(System.in);
         boolean stateOfProgram = true;
         while (stateOfProgram) {
-            System.out.println("What operation do you want to do? \n 1. Add book \n 2. Borrow book \n 3. Return book\n 4. Display all the books \n 5. Quit\n");
+            System.out.println(
+                    "What operation do you want to do? \n 1. Add book \n 2. Borrow book \n 3. Return book\n 4. Display all the books \n 5. Quit\n");
             try {
                 int choice = scanner.nextInt();
                 scanner.nextLine(); // Consume the newline character
@@ -174,4 +175,3 @@ public class Library {
         System.out.println("Goodbye...");
     }
 }
-
