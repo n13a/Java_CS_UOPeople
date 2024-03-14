@@ -35,8 +35,11 @@ public class App {
                 System.out.println((i + 1) + ". " + products.get(i).getName() + " - $" + products.get(i).getPrice());
             }
 
-            System.out.println(
-                    "\nEnter the number of the product you want to add to the shopping cart,\ntype 'cart' to view your shopping cart, type 'remove' to remove\na product from your shopping cart, or type 'order' to place your order:");
+            System.out.println("""
+                    \nEnter the number of the product you want to add to the shopping cart,
+                    \ntype 'cart' to view your shopping cart, type 'remove' to remove\n
+                    a product from your shopping cart, or type 'order' to place your order:
+                     """);
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("order")) {
